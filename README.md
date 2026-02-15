@@ -1,6 +1,6 @@
 # 🤖 Copilot AgentOps
 
-Copilot AgentOps is a comprehensive framework and accelerator suite designed to maximize productivity when using GitHub Copilot. It is based on the GitHub Copilot best practices and community created collection of custom agents, prompts, and instructions to supercharge your GitHub Copilot experience across different domains, languages, and use cases.
+Copilot AgentOps is a comprehensive framework and accelerator suite designed to maximize productivity when using GitHub Copilot. It is based on the GitHub Copilot best practices andcommunity created collection of custom agents, prompts, and instructions to supercharge your GitHub Copilot experience across different domains, languages, and use cases.
 
 This repository provides a comprehensive toolkit for enhancing GitHub Copilot with specialized:
 
@@ -14,12 +14,19 @@ This repository provides a comprehensive toolkit for enhancing GitHub Copilot wi
 
 ## How to Install Customizations
 
-To make it easy to add these customizations to your editor, we have created an [MCP Server](https://developer.microsoft.com/blog/announcing-copilot-agentops-mcp-server) that provides a prompt for searching and installing prompts, instructions, agents, and skills directly from this repository. You'll need to have Docker installed and running to run the MCP server locally.
+To make it easy to add these customizations to your editor, created an MCP Server that provides a prompt for searching and installing prompts, instructions, agents, and skills directly from this repository. You'll need to have Docker installed and running to run the MCP server locally.
 
-[![Install in VS Code](https://img.shields.io/badge/VS_Code-Install-0098FF?logo=visualstudiocode&logoColor=white)](https://aka.ms/copilot-agentops/mcp/vscode) [![Install in Visual Studio](https://img.shields.io/badge/Visual_Studio-Install-C16FDE?logo=visualstudio&logoColor=white)](https://aka.ms/copilot-agentops/mcp/vs)
+### Step 1: Open your Copilot settings
 
-<details>
-<summary>Show MCP Server JSON configuration</summary>
+In VS Code, open the Command Palette (`Cmd+Shift+P` on macOS or `Ctrl+Shift+P` on Windows/Linux) and search for "Copilot: Open User Settings (JSON)".
+
+### Step 2: Locate the MCP servers configuration
+
+Find or create the `"mcpServers"` object in your settings file.
+
+### Step 3: Add the copilot-agentops server
+
+Add the following configuration block inside the `"mcpServers"` object:
 
 ```json
 {
@@ -31,7 +38,7 @@ To make it easy to add these customizations to your editor, we have created an [
         "run",
         "-i",
         "--rm",
-        "ghcr.io/microsoft/mcp-dotnet-samples/copilot-agentops:latest"
+        "ajilantony/copilot-agentops:latest"
       ]
     }
   }
