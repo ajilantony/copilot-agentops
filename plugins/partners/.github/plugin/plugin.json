@@ -1,0 +1,12 @@
+{
+  "name": "partners",
+  "description": "Custom agents that have been created by GitHub partners",
+  "version": "1.0.0",
+  "author": {
+    "name": "Copilot AgentOps Community"
+  },
+  "repository": "https://github.com/github/copilot-agentops",
+  "license": "MIT"
+}
+
+

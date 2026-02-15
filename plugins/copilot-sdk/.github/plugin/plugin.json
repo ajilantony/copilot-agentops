@@ -1,0 +1,12 @@
+{
+  "name": "copilot-sdk",
+  "description": "Build applications with the GitHub Copilot SDK across multiple programming languages. Includes comprehensive instructions for C#, Go, Node.js/TypeScript, and Python to help you create AI-powered applications.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Copilot AgentOps Community"
+  },
+  "repository": "https://github.com/github/copilot-agentops",
+  "license": "MIT"
+}
+
+

@@ -1,0 +1,12 @@
+{
+  "name": "openapi-to-application-java-spring-boot",
+  "description": "Generate production-ready Spring Boot applications from OpenAPI specifications. Includes project scaffolding, REST controller generation, service layer organization, and Spring Boot best practices.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Copilot AgentOps Community"
+  },
+  "repository": "https://github.com/github/copilot-agentops",
+  "license": "MIT"
+}
+
+

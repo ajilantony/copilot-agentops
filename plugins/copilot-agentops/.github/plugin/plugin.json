@@ -1,0 +1,12 @@
+{
+  "name": "copilot-agentops",
+  "description": "Meta prompts that help you discover and generate curated GitHub Copilot agents, collections, instructions, prompts, and skills.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Copilot AgentOps Community"
+  },
+  "repository": "https://github.com/github/copilot-agentops",
+  "license": "MIT"
+}
+
+
