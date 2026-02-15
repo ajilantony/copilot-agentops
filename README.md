@@ -1,6 +1,6 @@
 # 🤖 Copilot AgentOps
 
-A community created collection of custom agents, prompts, and instructions to supercharge your GitHub Copilot experience across different domains, languages, and use cases.
+Copilot AgentOps is a comprehensive framework and accelerator suite designed to maximize productivity when using GitHub Copilot. It is based on the GitHub Copilot best practices and community created collection of custom agents, prompts, and instructions to supercharge your GitHub Copilot experience across different domains, languages, and use cases.
 
 This repository provides a comprehensive toolkit for enhancing GitHub Copilot with specialized:
 
