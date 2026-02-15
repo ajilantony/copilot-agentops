@@ -1,13 +1,16 @@
 # 🎯 Reusable Prompts
 
 Ready-to-use prompt templates for specific development scenarios and tasks, defining prompt text with a specific mode, model, and available set of tools.
+
 ### How to Use Reusable Prompts
 
 **To Install:**
+
 - Click the **VS Code** install button for the prompt you want to use
 - Download the `*.prompt.md` file and manually add it to your prompt collection
 
 **To Run/Execute:**
+
 - Use `/prompt-name` in VS Code chat after installation
 - Run the `Chat: Run Prompt` command from the Command Palette
 - Hit the run button while you have a prompt file open in VS Code
@@ -51,7 +54,7 @@ Ready-to-use prompt templates for specific development scenarios and tasks, defi
 | [Create GitHub Pull Request from Specification](../prompts/create-github-pull-request-from-specification.prompt.md)<br />[![Install in VS Code](https://img.shields.io/badge/VS_Code-Install-0098FF?style=flat-square&logo=visualstudiocode&logoColor=white)](https://aka.ms/copilot-agentops/install/prompt?url=vscode%3Achat-prompt%2Finstall%3Furl%3Dhttps%3A%2F%2Fraw.githubusercontent.com%2Fgithub%2Fcopilot-agentops%2Fmain%2Fprompts%2Fcreate-github-pull-request-from-specification.prompt.md) | Create GitHub Pull Request for feature request from specification file using pull_request_template.md template. |
 | [Create high‑quality AGENTS.md file](../prompts/create-agentsmd.prompt.md)<br />[![Install in VS Code](https://img.shields.io/badge/VS_Code-Install-0098FF?style=flat-square&logo=visualstudiocode&logoColor=white)](https://aka.ms/copilot-agentops/install/prompt?url=vscode%3Achat-prompt%2Finstall%3Furl%3Dhttps%3A%2F%2Fraw.githubusercontent.com%2Fgithub%2Fcopilot-agentops%2Fmain%2Fprompts%2Fcreate-agentsmd.prompt.md) | Prompt for generating an AGENTS.md file for a repository |
 | [Create Implementation Plan](../prompts/create-implementation-plan.prompt.md)<br />[![Install in VS Code](https://img.shields.io/badge/VS_Code-Install-0098FF?style=flat-square&logo=visualstudiocode&logoColor=white)](https://aka.ms/copilot-agentops/install/prompt?url=vscode%3Achat-prompt%2Finstall%3Furl%3Dhttps%3A%2F%2Fraw.githubusercontent.com%2Fgithub%2Fcopilot-agentops%2Fmain%2Fprompts%2Fcreate-implementation-plan.prompt.md) | Create a new implementation plan file for new features, refactoring existing code or upgrading packages, design, architecture or infrastructure. |
-| [Create LLMs.txt File from Repository Structure](../prompts/create-llms.prompt.md)<br />[![Install in VS Code](https://img.shields.io/badge/VS_Code-Install-0098FF?style=flat-square&logo=visualstudiocode&logoColor=white)](https://aka.ms/copilot-agentops/install/prompt?url=vscode%3Achat-prompt%2Finstall%3Furl%3Dhttps%3A%2F%2Fraw.githubusercontent.com%2Fgithub%2Fcopilot-agentops%2Fmain%2Fprompts%2Fcreate-llms.prompt.md) | Create an llms.txt file from scratch based on repository structure following the llms.txt specification at https://llmstxt.org/ |
+| [Create LLMs.txt File from Repository Structure](../prompts/create-llms.prompt.md)<br />[![Install in VS Code](https://img.shields.io/badge/VS_Code-Install-0098FF?style=flat-square&logo=visualstudiocode&logoColor=white)](https://aka.ms/copilot-agentops/install/prompt?url=vscode%3Achat-prompt%2Finstall%3Furl%3Dhttps%3A%2F%2Fraw.githubusercontent.com%2Fgithub%2Fcopilot-agentops%2Fmain%2Fprompts%2Fcreate-llms.prompt.md) | Create an llms.txt file from scratch based on repository structure following the llms.txt specification at <https://llmstxt.org/> |
 | [Create Readme](../prompts/create-readme.prompt.md)<br />[![Install in VS Code](https://img.shields.io/badge/VS_Code-Install-0098FF?style=flat-square&logo=visualstudiocode&logoColor=white)](https://aka.ms/copilot-agentops/install/prompt?url=vscode%3Achat-prompt%2Finstall%3Furl%3Dhttps%3A%2F%2Fraw.githubusercontent.com%2Fgithub%2Fcopilot-agentops%2Fmain%2Fprompts%2Fcreate-readme.prompt.md) | Create a README.md file for the project |
 | [Create Specification](../prompts/create-specification.prompt.md)<br />[![Install in VS Code](https://img.shields.io/badge/VS_Code-Install-0098FF?style=flat-square&logo=visualstudiocode&logoColor=white)](https://aka.ms/copilot-agentops/install/prompt?url=vscode%3Achat-prompt%2Finstall%3Furl%3Dhttps%3A%2F%2Fraw.githubusercontent.com%2Fgithub%2Fcopilot-agentops%2Fmain%2Fprompts%2Fcreate-specification.prompt.md) | Create a new specification file for the solution, optimized for Generative AI consumption. |
 | [Create Spring Boot Java project prompt](../prompts/create-spring-boot-java-project.prompt.md)<br />[![Install in VS Code](https://img.shields.io/badge/VS_Code-Install-0098FF?style=flat-square&logo=visualstudiocode&logoColor=white)](https://aka.ms/copilot-agentops/install/prompt?url=vscode%3Achat-prompt%2Finstall%3Furl%3Dhttps%3A%2F%2Fraw.githubusercontent.com%2Fgithub%2Fcopilot-agentops%2Fmain%2Fprompts%2Fcreate-spring-boot-java-project.prompt.md) | Create Spring Boot Java Project Skeleton |
