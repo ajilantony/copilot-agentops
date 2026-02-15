@@ -129,10 +129,6 @@ For AI coding agents working with this project, refer to [AGENTS.md](AGENTS.md) 
 └── skills/           # AI capabilities for specialized tasks
 ```
 
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
 ## 📚 Additional Resources
 
 - [VS Code Copilot Customization Documentation](https://code.visualstudio.com/docs/copilot/copilot-customization) - Official Microsoft documentation
