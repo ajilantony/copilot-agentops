@@ -308,9 +308,6 @@ export async function openFileModal(
   const installVscode = document.getElementById(
     "install-vscode"
   ) as HTMLAnchorElement | null;
-  const installInsiders = document.getElementById(
-    "install-insiders"
-  ) as HTMLAnchorElement | null;
   const copyBtn = document.getElementById("copy-btn");
   const downloadBtn = document.getElementById("download-btn");
   const closeBtn = document.getElementById("close-modal");
@@ -366,15 +363,13 @@ export async function openFileModal(
   const codeEl = modalContent.querySelector("code");
 
   // Setup install dropdown
-  const vscodeUrl = getVSCodeInstallUrl(type, filePath, false);
-  const insidersUrl = getVSCodeInstallUrl(type, filePath, true);
+  const vscodeUrl = getVSCodeInstallUrl(type, filePath);
 
   if (vscodeUrl && installDropdown) {
     installDropdown.style.display = "inline-flex";
     installDropdown.classList.remove("open");
     if (installBtnMain) installBtnMain.href = vscodeUrl;
     if (installVscode) installVscode.href = vscodeUrl;
-    if (installInsiders) installInsiders.href = insidersUrl || "#";
   } else if (installDropdown) {
     installDropdown.style.display = "none";
   }

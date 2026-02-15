@@ -15,7 +15,6 @@ import {
     ROOT_FOLDER,
     SKILLS_DIR,
     TEMPLATES,
-    vscodeInsidersInstallImage,
     vscodeInstallImage,
 } from "./constants.mjs";
 import {
@@ -274,11 +273,8 @@ function makeBadges(link, type) {
   const vscodeUrl = `${aka}?url=${encodeURIComponent(
     `vscode:chat-${type}/install?url=${repoBaseUrl}/${link}`
   )}`;
-  const insidersUrl = `${aka}?url=${encodeURIComponent(
-    `vscode-insiders:chat-${type}/install?url=${repoBaseUrl}/${link}`
-  )}`;
 
-  return `[![Install in VS Code](${vscodeInstallImage})](${vscodeUrl})<br />[![Install in VS Code Insiders](${vscodeInsidersInstallImage})](${insidersUrl})`;
+  return `[![Install in VS Code](${vscodeInstallImage})](${vscodeUrl})`;
 }
 
 /**

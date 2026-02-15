@@ -13,7 +13,7 @@ Team and project-specific instructions to enhance GitHub Copilot's behavior for 
   instructionsUsage: `### How to Use Custom Instructions
 
 **To Install:**
-- Click the **VS Code** or **VS Code Insiders** install button for the instruction you want to use
+- Click the **VS Code** install button for the instruction you want to use
 - Download the \`*.instructions.md\` file and manually add it to your project's instruction collection
 
 **To Use/Apply:**
@@ -28,7 +28,7 @@ Ready-to-use prompt templates for specific development scenarios and tasks, defi
   promptsUsage: `### How to Use Reusable Prompts
 
 **To Install:**
-- Click the **VS Code** or **VS Code Insiders** install button for the prompt you want to use
+- Click the **VS Code** install button for the prompt you want to use
 - Download the \`*.prompt.md\` file and manually add it to your prompt collection
 
 **To Run/Execute:**
@@ -64,7 +64,7 @@ Custom agents for GitHub Copilot, making it easy for users and organizations to 
   agentsUsage: `### How to Use Custom Agents
 
 **To Install:**
-- Click the **VS Code** or **VS Code Insiders** install button for the agent you want to use
+- Click the **VS Code** install button for the agent you want to use
 - Download the \`*.agent.md\` file and add it to your repository
 
 **MCP Server Setup:**
@@ -132,9 +132,6 @@ Hooks enable automated workflows triggered by specific events during GitHub Copi
 const vscodeInstallImage =
   "https://img.shields.io/badge/VS_Code-Install-0098FF?style=flat-square&logo=visualstudiocode&logoColor=white";
 
-const vscodeInsidersInstallImage =
-  "https://img.shields.io/badge/VS_Code_Insiders-Install-24bfa5?style=flat-square&logo=visualstudiocode&logoColor=white";
-
 const repoBaseUrl =
   "https://raw.githubusercontent.com/github/copilot-agentops/main";
 
@@ -181,7 +178,6 @@ export {
   SKILL_NAME_MIN_LENGTH,
   SKILLS_DIR,
   TEMPLATES,
-  vscodeInsidersInstallImage,
   vscodeInstallImage
 };
 

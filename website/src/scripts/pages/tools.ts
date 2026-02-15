@@ -182,11 +182,6 @@ function renderTools(tools: Tool[], query = ""): void {
           `<a href="${tool.links.vscode}" class="btn btn-primary" target="_blank" rel="noopener">Install in VS Code</a>`
         );
       }
-      if (tool.links["vscode-insiders"]) {
-        actions.push(
-          `<a href="${tool.links["vscode-insiders"]}" class="btn btn-outline" target="_blank" rel="noopener">VS Code Insiders</a>`
-        );
-      }
       if (tool.links["visual-studio"]) {
         actions.push(
           `<a href="${tool.links["visual-studio"]}" class="btn btn-outline" target="_blank" rel="noopener">Visual Studio</a>`

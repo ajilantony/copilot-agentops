@@ -1,1 +1,1 @@
-../../../prompts/suggest-awesome-github-copilot-prompts.prompt.md
+../../../prompts/suggest-github-copilot-prompts.prompt.md

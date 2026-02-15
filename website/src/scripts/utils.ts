@@ -95,18 +95,16 @@ export async function copyToClipboard(text: string): Promise<boolean> {
  * Generate VS Code install URL
  * @param type - Resource type (agent, prompt, instructions)
  * @param filePath - Path to the file
- * @param insiders - Whether to use VS Code Insiders
  */
 export function getVSCodeInstallUrl(
   type: string,
-  filePath: string,
-  insiders = false
+  filePath: string
 ): string | null {
   const config = VSCODE_INSTALL_CONFIG[type];
   if (!config) return null;
 
   const rawUrl = `${REPO_BASE_URL}/${filePath}`;
-  const vscodeScheme = insiders ? "vscode-insiders" : "vscode";
+  const vscodeScheme = "vscode";
   const innerUrl = `${vscodeScheme}:${
     config.scheme
   }/install?url=${encodeURIComponent(rawUrl)}`;
@@ -276,36 +274,15 @@ export function getInstallDropdownHtml(
   small = false
 ): string {
   const vscodeUrl = getVSCodeInstallUrl(type, filePath, false);
-  const insidersUrl = getVSCodeInstallUrl(type, filePath, true);
 
   if (!vscodeUrl) return "";
 
-  const sizeClass = small ? "install-dropdown-small" : "";
-  const uniqueId = `install-${filePath.replace(/[^a-zA-Z0-9]/g, "-")}`;
-
   return `
-    <div class="install-dropdown ${sizeClass}" id="${uniqueId}" data-install-scope="list">
-      <a href="${vscodeUrl}" class="btn btn-primary ${
+    <a href="${vscodeUrl}" class="btn btn-primary ${
     small ? "btn-small" : ""
-  } install-btn-main" target="_blank" rel="noopener">
-        Install
-      </a>
-      <button type="button" class="btn btn-primary ${
-        small ? "btn-small" : ""
-      } install-btn-toggle" aria-label="Install options" aria-expanded="false">
-        <svg viewBox="0 0 16 16" width="12" height="12" fill="currentColor">
-          <path d="M4.427 7.427l3.396 3.396a.25.25 0 00.354 0l3.396-3.396A.25.25 0 0011.396 7H4.604a.25.25 0 00-.177.427z"/>
-        </svg>
-      </button>
-      <div class="install-dropdown-menu">
-        <a href="${vscodeUrl}" target="_blank" rel="noopener">
-          VS Code
-        </a>
-        <a href="${insidersUrl}" target="_blank" rel="noopener">
-          VS Code Insiders
-        </a>
-      </div>
-    </div>
+  }" target="_blank" rel="noopener">
+      Install
+    </a>
   `;
 }
 

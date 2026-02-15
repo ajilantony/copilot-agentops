@@ -3,13 +3,13 @@ name: Copilot AgentOps
 description: "Meta prompts that help you discover and generate curated GitHub Copilot agents, collections, instructions, prompts, and skills."
 tags: [github-copilot, discovery, meta, prompt-engineering, agents]
 items:
-  - path: prompts/suggest-copilot-agentops-collections.prompt.md
+  - path: prompts/suggest-github-copilot-collections.prompt.md
     kind: prompt
-  - path: prompts/suggest-copilot-agentops-instructions.prompt.md
+  - path: prompts/suggest-github-copilot-instructions.prompt.md
     kind: prompt
-  - path: prompts/suggest-copilot-agentops-prompts.prompt.md
+  - path: prompts/suggest-github-copilot-prompts.prompt.md
     kind: prompt
-  - path: prompts/suggest-copilot-agentops-agents.prompt.md
+  - path: prompts/suggest-github-copilot-agents.prompt.md
     kind: prompt
   - path: agents/meta-agentic-project-scaffold.agent.md
     kind: agent
