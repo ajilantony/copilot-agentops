@@ -1,4 +1,4 @@
-# 🤖 Copilot AgentOps
+# Copilot AgentOps
 
 Copilot AgentOps is a comprehensive framework and accelerator suite designed to maximize productivity when using GitHub Copilot. It is based on the GitHub Copilot best practices andcommunity created collection of custom agents, prompts, and instructions to supercharge your GitHub Copilot experience across different domains, languages, and use cases.
 
@@ -14,19 +14,21 @@ This repository provides a comprehensive toolkit for enhancing GitHub Copilot wi
 
 ## How to Install Customizations
 
-To make it easy to add these customizations to your editor, created an MCP Server that provides a prompt for searching and installing prompts, instructions, agents, and skills directly from this repository. You'll need to have Docker installed and running to run the MCP server locally.
+To make it easy to add these customizations to your editor, I created an MCP Server that provides tools for searching this repository and installing prompts, instructions, agents, and skills directly from GitHub Copilot chat in VS Code. You'll need to have Docker installed and running to run the MCP server locally.
 
 ### Step 1: Open your Copilot settings in VS Code
 
 In VS Code, open the Command Palette:
 
-- macOS: Cmd + Shift + P
-- Windows / Linux: Ctrl + Shift + P
+- **macOS**: `Cmd + Shift + P`
+- **Windows/Linux**: `Ctrl + Shift + P`
 
-Search for and select:
-**Copilot: Open MCP Settings (JSON)**
+Search for and select: **MCP: Open User Configuration**
 
-This opens your MCP configuration file (typically mcp.json).
+This opens your MCP configuration file located at:
+
+- **Windows**: `%USERPROFILE%\AppData\Roaming\Code\User\mcp.json`
+- **macOS/Linux**: `~/.config/Code/User/mcp.json`
 
 ### Step 2: Locate the MCP servers configuration
 
@@ -46,8 +48,15 @@ Add the following configuration block inside the `"servers"` object:
   }
 }
 ```
+### Step 4: Start the copilot-agentops MCP server
 
-</details>
+Click **Start** to pull the `copilot-agentops` Docker image from Docker Hub and launch the MCP server as a container on your local machine.
+
+![alt text](image.png)
+
+You will see that the MCP Server is running and will display the number of tools and prompts that it provides as shown below.
+
+![alt text](image-1.png)
 
 ## 📄 llms.txt
 
