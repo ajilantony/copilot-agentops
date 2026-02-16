@@ -16,25 +16,33 @@ This repository provides a comprehensive toolkit for enhancing GitHub Copilot wi
 
 To make it easy to add these customizations to your editor, created an MCP Server that provides a prompt for searching and installing prompts, instructions, agents, and skills directly from this repository. You'll need to have Docker installed and running to run the MCP server locally.
 
-### Step 1: Open your Copilot settings
+### Step 1: Open your Copilot settings in VS Code
 
-In VS Code, open the Command Palette (`Cmd+Shift+P` on macOS or `Ctrl+Shift+P` on Windows/Linux) and search for "Copilot: Open User Settings (JSON)".
+In VS Code, open the Command Palette:
+
+- macOS: Cmd + Shift + P
+- Windows / Linux: Ctrl + Shift + P
+
+Search for and select:
+**Copilot: Open MCP Settings (JSON)**
+
+This opens your MCP configuration file (typically mcp.json).
 
 ### Step 2: Locate the MCP servers configuration
 
-Find or create the `"mcpServers"` object in your settings file.
+In the mcp.json file, find or create the top‑level "servers" object.
 
-### Step 3: Add the copilot-agentops server
+### Step 3: Add the copilot-agentops MCP server
 
-Add the following configuration block inside the `"mcpServers"` object:
+Add the following configuration block inside the `"servers"` object:
 
 ```json
 {
   "servers": {
       "copilot-agentops": {
-   "command": "docker",
-   "args": ["run", "-i", "--rm", "ajilantony/copilot-agentops:latest"]
-  }  
+          "command": "docker",
+          "args": ["run", "-i", "--rm", "ajilantony/copilot-agentops:latest"]
+      }  
   }
 }
 ```
