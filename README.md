@@ -1,6 +1,6 @@
 # Copilot AgentOps
 
-Copilot AgentOps is a comprehensive framework and accelerator suite designed to maximize productivity when using GitHub Copilot. It is based on the GitHub Copilot best practices andcommunity created collection of custom agents, prompts, and instructions to supercharge your GitHub Copilot experience across different domains, languages, and use cases.
+Copilot AgentOps is a curated collection of frameworks and accelerators that brings together GitHub Copilot's official best practices, community-contributed artifacts, and proven patterns to maximize productivity when using GitHub Copilot.
 
 This repository provides a comprehensive toolkit for enhancing GitHub Copilot with specialized:
 
@@ -14,7 +14,7 @@ This repository provides a comprehensive toolkit for enhancing GitHub Copilot wi
 
 ## How to Install Customizations
 
-To make it easy to add these customizations to your editor, I created an MCP Server that provides tools for searching this repository and installing prompts, instructions, agents, and skills directly from GitHub Copilot chat in VS Code. You'll need to have Docker installed and running to run the MCP server locally.
+To make it easy to add these customizations to your editor, Copilot AgentOps is also available as an MCP (Model Context Protocol) server, making it easy to integrate into your development environment. This allows you to enable searching and installing prompts, instructions, agents, and skills directly from this repository. You'll need to have Docker installed and running to run the MCP server locally.
 
 ### Step 1: Open your Copilot settings in VS Code
 
@@ -48,6 +48,7 @@ Add the following configuration block inside the `"servers"` object:
   }
 }
 ```
+
 ### Step 4: Start the copilot-agentops MCP server
 
 Click **Start** to pull the `copilot-agentops` Docker image from Docker Hub and launch the MCP server as a container on your local machine.
@@ -58,37 +59,11 @@ You will see that the MCP Server is running and will display the number of tools
 
 ![alt text](image-1.png)
 
-## 📄 llms.txt
-
-An [`llms.txt`](https://github.github.io/copilot-agentops/llms.txt) file following the [llmstxt.org](https://llmstxt.org/) specification is available on the GitHub Pages site. This machine-readable file makes it easy for Large Language Models to discover and understand all available agents, prompts, instructions, and skills, providing a structured overview of the repository's resources with names and descriptions.
-
-## 🔧 How to Use
-
-### 🔌 Plugins
-
-Plugins are installable packages generated from collections. Each plugin contains symlinked agents, commands (prompts), and skills from the source collection, making it easy to install a curated set of resources.
-
-#### Installing Plugins
-
-First, add the Copilot AgentOps marketplace to your Copilot CLI:
-
-```bash
-copilot plugin marketplace add github/copilot-agentops
-```
-
-Then install any plugin from the collection:
-
-```bash
-copilot plugin install <plugin-name>@copilot-agentops
-```
-
-Alternatively, you can use the `/plugin` command within a Copilot chat session to browse and install plugins interactively.
-
-### 🤖 Custom Agents
+### Custom Agents
 
 Custom agents can be used in Copilot coding agent (CCA), VS Code, and Copilot CLI (coming soon). For CCA, when assigning an issue to Copilot, select the custom agent from the provided list. In VS Code, you can activate the custom agent in the agents session, alongside built-in agents like Plan and Agent.
 
-### 🎯 Prompts
+### Prompts
 
 Use the `/` command in GitHub Copilot Chat to access prompts:
 
@@ -96,22 +71,22 @@ Use the `/` command in GitHub Copilot Chat to access prompts:
 /copilot-agentops create-readme
 ```
 
-### 📋 Instructions
+### Instructions
 
 Instructions automatically apply to files based on their patterns and provide contextual guidance for coding standards, frameworks, and best practices.
 
-### 🪝 Hooks
+### Hooks
 
 Hooks enable automated workflows triggered by specific events during GitHub Copilot coding agent sessions (like sessionStart, sessionEnd, userPromptSubmitted). They can automate tasks like logging, auto-committing changes, or integrating with external services.
 
-## 🎯 Why Use Copilot AgentOps?
+## Why Use Copilot AgentOps?
 
 - **Productivity**: Pre-built agents, prompts and instructions save time and provide consistent results.
 - **Best Practices**: Benefit from community-curated coding standards and patterns.
 - **Specialized Assistance**: Access expert-level guidance through specialized custom agents.
 - **Continuous Learning**: Stay updated with the latest patterns and practices across technologies.
 
-## 📖 Repository Structure
+## Repository Structure
 
 ```plaintext
 ├── prompts/          # Task-specific prompts (.prompt.md)
