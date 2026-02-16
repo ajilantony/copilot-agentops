@@ -31,16 +31,10 @@ Add the following configuration block inside the `"mcpServers"` object:
 ```json
 {
   "servers": {
-    "copilot-agentops": {
-      "type": "stdio",
-      "command": "docker",
-      "args": [
-        "run",
-        "-i",
-        "--rm",
-        "ajilantony/copilot-agentops:latest"
-      ]
-    }
+      "copilot-agentops": {
+   "command": "docker",
+   "args": ["run", "-i", "--rm", "ajilantony/copilot-agentops:latest"]
+  }  
   }
 }
 ```
