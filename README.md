@@ -100,23 +100,6 @@ Hooks enable automated workflows triggered by specific events during GitHub Copi
 - **Specialized Assistance**: Access expert-level guidance through specialized custom agents.
 - **Continuous Learning**: Stay updated with the latest patterns and practices across technologies.
 
-## 🤝 Contributing
-
-We welcome contributions! Please see our [Contributing Guidelines](CONTRIBUTING.md) for details on how to:
-
-- Add new prompts, instructions, hooks, agents, or skills
-- Improve existing content
-- Report issues or suggest enhancements
-
-For AI coding agents working with this project, refer to [AGENTS.md](AGENTS.md) for detailed technical guidance on development workflows, setup commands, and contribution standards.
-
-### Quick Contribution Guide
-
-1. Follow our file naming conventions and frontmatter requirements
-2. Test your contributions thoroughly
-3. Update the appropriate README tables
-4. Submit a pull request with a clear description
-
 ## 📖 Repository Structure
 
 ```plaintext
