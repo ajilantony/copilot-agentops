@@ -2,6 +2,8 @@
 
 Copilot AgentOps is a curated collection of frameworks and accelerators that brings together GitHub Copilot's official best practices, community-contributed artifacts, and proven patterns to maximize productivity when using GitHub Copilot.
 
+Think of it as the GitHub Copilot adoption framework that you can tailor to your organization's unique needs. Rather than starting from scratch, teams get a proven foundation they can build upon, adding their own coding standards, security requirements, and domain-specific guidelines.
+
 This repository provides a comprehensive toolkit for enhancing GitHub Copilot with specialized:
 
 - **[Agents](docs/README.agents.md)** - Specialized GitHub Copilot agents that integrate with MCP servers to provide enhanced capabilities for specific workflows and tools
